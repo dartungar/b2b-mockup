@@ -1,0 +1,339 @@
+@import url("colors.css");
+
+/* globals */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif !important;
+  font-size: 12px;
+  color: #1a1f29;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+a {
+  color: #2791d9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2791d9;
+  text-decoration: underline;
+}
+
+/* ELEMENTS */
+
+/* layout */
+.row {
+}
+
+.col {
+  padding: 1rem;
+  flex-direction: column;
+}
+
+/* cards */
+.card-container {
+  width: 380px;
+  height: 280px;
+}
+
+.card-title {
+  width: 100%;
+  font-size: 20px;
+}
+
+/* forms */
+input,
+select {
+  border-radius: 2px;
+  border: 1px solid var(--color-disabled);
+}
+
+input:focus,
+input:active,
+input:hover,
+select:focus,
+select:active,
+select:hover {
+  border: 1px solid var(--color-primary);
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.clickable-label {
+  cursor: pointer;
+}
+
+.input-with-right-btn {
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-with-right-btn:focus {
+  border-right: none;
+}
+
+.input-btn-no-left-border {
+  border-radius: 0 2px 2px 0;
+  border-left: none;
+}
+
+/* special navbar list style */
+.navbar-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links-list li {
+  display: inline-block;
+  margin: auto 0.5rem;
+}
+
+/* chat widget */
+.chat-widget-container {
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+}
+
+/* UTILS */
+
+/* width utils */
+.max-width-100ch {
+  width: min(95%, 200ch);
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+/* height utils */
+.height-full {
+  height: 100%;
+}
+
+.height-2 {
+  height: 2rem;
+}
+
+/*  flex utils */
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* spacing utils */
+.center-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mx-05 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.my-05 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-05 {
+  padding: 0.5rem;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* text */
+.text-lg {
+  font-size: 15px;
+}
+
+.text-xlg {
+  font-size: 20px;
+}
+
+/* borders */
+.border-none {
+  border: none;
+}
+
+.border-1 {
+  border: 1px solid;
+}
+
+.border-radius {
+  border-radius: 2px;
+}
+
+/* shadows */
+.shadow-outer {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.shadow-inner {
+  box-shadow: var(--color-secondary-darker);
+}
+
+/* icons */
+.icon:hover {
+  cursor: pointer;
+  color: #76797f;
+}
+
+.icon-small {
+  font-size: 18px;
+}
+
+.icon-large {
+  font-size: 26px;
+}
+
+.icon-xlarge {
+  font-size: 34pxrem;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-disabled {
+  color: var(--color-disabled);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-black-alt {
+  color: var(--color-black-alt);
+}
+
+.color-danger {
+  color: var(--color-danger);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+.bg-color-main {
+  background-color: var(--bg-color);
+}
+
+.bg-color-alt {
+  background-color: var(--bg-color-dark);
+}
+
+.bg-color-alt-dark {
+  background-color: var(--bg-color-darker);
+}
+
+.bg-color-primary {
+  background-color: var(--bg-color-primary);
+}
+
+.bg-color-disabled {
+  background-color: var(--bg-color-dark);
+}
+.bg-color-disabled-dark {
+  background-color: var(--bg-color-darker);
+}
+
+/* ANIMATIONS & TRANSITIONS */
+
+html * {
+  transition: color 0.5s, background-color 0.5s;
+}

@@ -4,73 +4,245 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons&family=Open+Sans"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
     <title>b2b.treolan.ru / Главная страница</title>
   </head>
+
   <body class="bg-color-main">
-    <header class="width-all">
-      <nav class="flex-row space-between bg-color-disabled p-1">
-        <div class="flex-col">
-          <img src="logo.svg" width="40px" alt="Treolan Logo" /> меню и менеджер
-          слева
+    <header class="width-full">
+      <nav class="flex space-between bg-color-alt p-05 px-1">
+        <div class="flex align-items-center">
+          <span class="material-icons icon icon-large color-primary mr-1"
+            >menu</span
+          >
+          <img
+            src="images/logo.svg"
+            width="40px"
+            alt="Treolan Logo"
+            class="mr-1"
+          />
+          <span class="mr-05 text-lg color-primary">Ваш менеджер:</span>
+          <span class="text-lg">Анастасия Потапова</span>
         </div>
-        <div class="flex-col">курс валют по центру</div>
-        <div class="flex-col">
-          <span class="material-icons">search</span>
-          <span class="material-icons">notifications</span>
-          <span class="material-icons">upload</span>
-          <span class="material-icons">local_shipping</span>
-          <span class="material-icons">shopping_cart</span>
-          Павел Пейсахович
-          <span class="material-icons">account_box</span>
+        <div class="flex align-items-center text-lg">
+          <span class="mr-1"
+            ><span class="color-primary mx-05">Курс ЦБ:</span
+            ><span>38.56</span></span
+          >
+          <span class="mr-05"
+            ><span class="color-primary mx-05">Курс фиксации:</span>
+            <span>38.94</span></span
+          >
+          <span class="material-icons icon icon-small">info</span>
+        </div>
+        <div class="flex align-items-center text-lg">
+          <span class="material-icons icon icon-large mr-05">search</span>
+          <span class="material-icons icon icon-large mr-05"
+            >notifications</span
+          >
+          <span class="material-icons icon icon-large mr-05">upload</span>
+          <span class="material-icons icon icon-large mr-05"
+            >local_shipping
+          </span>
+          <span class="material-icons icon icon-large mr-1">shopping_cart</span>
+          <span class="mx-05">Павел Пейсахович</span>
+
+          <span class="material-icons icon icon-large">account_box</span>
         </div>
       </nav>
-      <nav class="flex-row space-between bg-color-disabled-dark p-1">
-        <div class="flex-col">пункты избранного слева</div>
-        <div class="flex-col">управление избранным справа</div>
+      <nav class="flex space-between bg-color-alt-dark p-05 px-1">
+        <div class="flex align-items-center">
+          <span class="material-icons icon icon-small">help</span>
+          <ul class="navbar-links-list color-black-alt mx-1#">
+            <li>
+              Мои заказы <sup><small>AWESOME</small></sup>
+            </li>
+            <li>Каталог</li>
+            <li>Резервы</li>
+            <li>Новости</li>
+            <li>Маркетинговые программы</li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="flex align-items-center mr-1">
+            <span class="material-icons icon icon-small mr-05">add</span
+            ><span>Добавить в избранное</span>
+          </div>
+          <div class="flex align-items-center mx-1">
+            <span class="material-icons icon icon-small mr-05">star</span>
+            <span>Отобранные у детей позиции</span>
+          </div>
+          <div class="flex align-items-center">
+            <span class="material-icons icon icon-small">settings</span>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="max-width-100ch center-content">
-      <div class="flex-row space-between my-2">
-        <div class="flex-col">каталог товаров</div>
-        <div class="flex-col">импорт</div>
-        <div class="flex-col">счета и резервы к удалению</div>
+      <div class="flex space-between">
+        <!-- Карточка "Каталог товаров" -->
+        <div class="flex col card-container">
+          <div class="card-title color-primary my-05">Каталог товаров</div>
+          <!-- содержимое карточки -->
+          <div class="width-full height-full p-1 shadow-outer border-radius">
+            <div class="flex width-ful my-1">
+              <input type="text" placeholder="Введите строку для поиска" /
+              class="input-with-right-btn input-text height-2 width-full px-1">
+              <button class="bg-color-primary input-btn-no-left-border">
+                <span
+                  class="
+                    material-icons
+                    icon-large
+                    right-btn-input
+                    color-secondary
+                  "
+                  >search</span
+                >
+              </button>
+            </div>
+            <div class="flex text-lg">
+              <div class="width-half">
+                <div class=""><a href="#">Акция дня</a></div>
+                <div class="my-1"><a href="#">Ноутбуки и планшеты</a></div>
+                <div class="my-1"><a href="#">Серверы</a></div>
+                <div class="my-1"><a href="#">Мониторы</a></div>
+              </div>
+              <div class="width-half">
+                <div class=""><a href="#">Программное обеспечение</a></div>
+                <div class="my-1"><a href="#">Комплектующие для ПК</a></div>
+                <div class="my-1"><a href="#">Компьютеры</a></div>
+                <div class="my-1"><a href="#">Выбрать раздел</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка "Импорт" -->
+        <div class="flex col card-container">
+          <div class="card-title color-primary my-05">Импорт</div>
+          <!-- содержимое карточки -->
+          <div
+            class="
+              width-full
+              height-full
+              p-1
+              shadow-outer
+              border-radius
+              text-lg
+            "
+          >
+            <div class="flex width-ful my-1">
+              <input type="text" placeholder='Введите или вставьте артикул(ы)' /
+              class="height-2 width-full px-1">
+            </div>
+            <div class="flex text-lg">
+              <div class="width-half mr-1">
+                <select class="width-full height-2" name="" id="">
+                  <option value="" disabled>выберите разделитель</option>
+                  <option value="" selected>таб</option>
+                  <option value="">;</option>
+                  <option value="">,</option>
+                  <option value="">.</option>
+                </select>
+              </div>
+              <div class="width-half">
+                <button
+                  class="width-full height-2 color-secondary bg-color-primary"
+                >
+                  В КОРЗИНУ
+                </button>
+              </div>
+            </div>
+            <div class="my-1"><a href="#">Инструкция</a></div>
+            <div class="my-1"><a href="#">Расширенный импорт позиций</a></div>
+          </div>
+        </div>
+        <!-- Карточка "Счета и резервы к удалению" -->
+        <div class="flex col card-container">
+          <div class="card-title color-primary my-05">
+            Счета и резервы к удалению
+          </div>
+          <!-- содержимое карточки -->
+          <div
+            class="
+              width-full
+              height-full
+              p-1
+              shadow-outer
+              border-radius
+              text-lg
+            "
+          >
+            <div class="flex text-xlg">
+              <div class="color-primary mr-1">Счета</div>
+              <div class="color-black-alt mx-05">Резервы</div>
+            </div>
+            <div class="flex space-between my-1 align-items-center">
+              <div class="flex align-items-center">
+                <input
+                  type="radio"
+                  name="analytics-kind"
+                  id="positions"
+                  class="m-0"
+                />
+                <label for="positions" class="mx-05 mr-1 clickable-label"
+                  >позиции</label
+                >
+                <input
+                  type="radio"
+                  name="analytics-kind"
+                  id="bills"
+                  class="mx-05"
+                />
+                <label for="bills" class="clickable-label">счета</label>
+              </div>
+              <div class="flex align-items-center">
+                <label for="mine" class="clickable-label">Мои</label>
+                <input type="checkbox" name="mine" id="mine" />
+              </div>
+            </div>
+            <div class="my-1">
+              Сейчас у Вас нет счетов, срок действия которых истекает сегодня.
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex-row space-between my-2">
-        <div class="flex-col">две награды</div>
-        <div class="flex-col">две награды</div>
-        <div class="flex-col">баннер</div>
+      <!-- Строка с наградами -->
+      <div class="flex space-between my-2">
+        <div class="flex">две награды</div>
+        <div class="flex">две награды</div>
+        <div class="flex">баннер</div>
       </div>
-      <div class="flex-row space-between my-2">
-        <div class="flex-col">коротко о главном</div>
-        <div class="flex-col">маркетинговые программы</div>
-        <div class="flex-col">два баннера</div>
+      <div class="flex space-between my-2">
+        <div class="flex">коротко о главном</div>
+        <div class="flex">маркетинговые программы</div>
+        <div class="flex">два баннера</div>
       </div>
-      <div class="flex-row space-between my-2 flex-col">
+      <div class="flex space-between my-2 flex">
         четвертая строка - табы новостей
       </div>
-      <div class="flex-row space-between my-2">
-        <div class="flex-col">новости раз</div>
-        <div class="flex-col">новости два</div>
-        <div class="flex-col">новости три</div>
+      <div class="flex space-between my-2">
+        <div class="flex">новости раз</div>
+        <div class="flex">новости два</div>
+        <div class="flex">новости три</div>
       </div>
     </main>
     <footer class="max-width-100ch center-content mt-auto">
-      <div class="flex-row space-between">
-        <div class="flex-col">
-          <div class="flex-col">помощь по системе</div>
-          <div class="flex-col">адрес</div>
-          <div class="flex-col">телефон</div>
-          <div class="flex-col">телеграф</div>
+      <div class="flex space-between">
+        <div class="flex">
+          <div class="flex">помощь по системе</div>
+          <div class="flex">адрес</div>
+          <div class="flex">телефон</div>
+          <div class="flex">телеграф</div>
         </div>
-        <div class="flex-col">иконки соцсетей</div>
+        <div class="flex">иконки соцсетей</div>
       </div>
-      <div class="flex-col">(c) Treolan 2021</div>
+      <div class="flex">(c) Treolan 2021</div>
     </footer>
   </body>
 </html>
