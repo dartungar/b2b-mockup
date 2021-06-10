@@ -5,55 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&family=Open+Sans"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
     <title>b2b.treolan.ru / Главная страница</title>
   </head>
   <body class="bg-color-main">
     <header class="width-all">
       <nav class="flex-row space-between bg-color-disabled p-1">
-        <div>меню и менеджер слева</div>
-        <div>курс валют по центру</div>
-        <div>функциональные кнопки</div>
+        <div class="flex-col">
+          <img src="logo.svg" width="40px" alt="Treolan Logo" /> меню и менеджер
+          слева
+        </div>
+        <div class="flex-col">курс валют по центру</div>
+        <div class="flex-col">
+          <span class="material-icons">search</span>
+          <span class="material-icons">notifications</span>
+          <span class="material-icons">upload</span>
+          <span class="material-icons">local_shipping</span>
+          <span class="material-icons">shopping_cart</span>
+          Павел Пейсахович
+          <span class="material-icons">account_box</span>
+        </div>
       </nav>
       <nav class="flex-row space-between bg-color-disabled-dark p-1">
-        <div>пункты избранного слева</div>
-        <div>управление избранным справа</div>
+        <div class="flex-col">пункты избранного слева</div>
+        <div class="flex-col">управление избранным справа</div>
       </nav>
     </header>
     <main class="max-width-100ch center-content">
       <div class="flex-row space-between my-2">
-        <div>каталог товаров</div>
-        <div>импорт</div>
-        <div>счета и резервы к удалению</div>
+        <div class="flex-col">каталог товаров</div>
+        <div class="flex-col">импорт</div>
+        <div class="flex-col">счета и резервы к удалению</div>
       </div>
       <div class="flex-row space-between my-2">
-        <div>две награды</div>
-        <div>две награды</div>
-        <div>баннер</div>
+        <div class="flex-col">две награды</div>
+        <div class="flex-col">две награды</div>
+        <div class="flex-col">баннер</div>
       </div>
       <div class="flex-row space-between my-2">
-        <div>коротко о главном</div>
-        <div>маркетинговые программы</div>
-        <div>два баннера</div>
+        <div class="flex-col">коротко о главном</div>
+        <div class="flex-col">маркетинговые программы</div>
+        <div class="flex-col">два баннера</div>
       </div>
-      <div class="flex-row space-between my-2">
+      <div class="flex-row space-between my-2 flex-col">
         четвертая строка - табы новостей
       </div>
       <div class="flex-row space-between my-2">
-        <div>новости раз</div>
-        <div>новости два</div>
-        <div>новости три</div>
+        <div class="flex-col">новости раз</div>
+        <div class="flex-col">новости два</div>
+        <div class="flex-col">новости три</div>
       </div>
     </main>
-    <footer class="max-width-100ch center-content">
+    <footer class="max-width-100ch center-content mt-auto">
       <div class="flex-row space-between">
-        футер
-        <div>помощь по системе</div>
-        <div>адрес</div>
-        <div>телефон</div>
-        <div>телеграф</div>
+        <div class="flex-col">
+          <div class="flex-col">помощь по системе</div>
+          <div class="flex-col">адрес</div>
+          <div class="flex-col">телефон</div>
+          <div class="flex-col">телеграф</div>
+        </div>
+        <div class="flex-col">иконки соцсетей</div>
       </div>
-      <div>(c) Treolan 2021</div>
+      <div class="flex-col">(c) Treolan 2021</div>
     </footer>
   </body>
 </html>
