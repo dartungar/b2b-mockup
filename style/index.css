@@ -34,11 +34,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ELEMENTS */
+/* 
+ELEMENTS 
+*/
 
 /* layout */
-.row {
-}
 
 .col {
   padding: 1rem;
@@ -51,9 +51,37 @@ a:hover {
   height: 280px;
 }
 
+.card-container-no-height {
+  width: 380px;
+}
+
+.card-half-width {
+  width: 190px;
+}
+
 .card-title {
   width: 100%;
   font-size: 20px;
+}
+
+/* nav buttons for cards (< >) */
+.card-arrow {
+  position: absolute;
+  top: 45%;
+}
+
+.card-arrow-left {
+  left: 5%;
+}
+
+.card-arrow-right {
+  right: 5%;
+}
+
+/* position hack for company logo in Marketing Programs :( */
+.marketing-programs-logo {
+  position: relative;
+  left: 2rem;
 }
 
 /* forms */
@@ -115,7 +143,9 @@ input[type="checkbox"] {
   right: 10rem;
 }
 
-/* UTILS */
+/* 
+UTILS 
+*/
 
 /* width utils */
 .max-width-100ch {
@@ -137,6 +167,47 @@ input[type="checkbox"] {
 
 .height-2 {
   height: 2rem;
+}
+
+/* positioning utils */
+.inline-block {
+  display: inline-block;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.abs-vertical-centered {
+  top: 45%;
+}
+
+.abs-left {
+  left: 5%;
+}
+
+.abs-right {
+  right: 5%;
+}
+
+.float-right {
+  float: right;
+}
+
+.layer-background {
+  z-index: 0;
+}
+
+.layer-1 {
+  z-index: 100;
+}
+
+.layer-2 {
+  z-index: 200;
 }
 
 /*  flex utils */
@@ -181,6 +252,10 @@ input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.ml-2 {
+  margin-left: 2rem;
+}
+
 .mr-05 {
   margin-right: 0.5rem;
 }
@@ -209,6 +284,14 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
+.mt-2 {
+  margin-top: 2;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -227,6 +310,11 @@ input[type="checkbox"] {
   padding-right: 2rem;
 }
 
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 /* text */
 .text-lg {
   font-size: 15px;
@@ -234,6 +322,14 @@ input[type="checkbox"] {
 
 .text-xlg {
   font-size: 20px;
+}
+
+.text-sm {
+  font-size: 11px;
+}
+
+.text-xsm {
+  font-size: 8px;
 }
 
 /* borders */
@@ -245,8 +341,16 @@ input[type="checkbox"] {
   border: 1px solid;
 }
 
+.border-bottom-1 {
+  border-bottom: 1px solid;
+}
+
 .border-radius {
   border-radius: 2px;
+}
+
+.border-color-main {
+  border-color: var(--color-disabled);
 }
 
 /* shadows */
@@ -311,6 +415,10 @@ input[type="checkbox"] {
 
 .bg-color-main {
   background-color: var(--bg-color);
+}
+
+.bg-color-dark {
+  background-color: var(--bg-color-dark);
 }
 
 .bg-color-alt {
