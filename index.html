@@ -34,10 +34,10 @@
             src="images/logo.svg"
             width="40px"
             alt="Treolan Logo"
-            class="mr-1"
+            class="mr-1 cursor-pointer"
           />
           <span class="mr-05 text-lg color-primary">Ваш менеджер:</span>
-          <span class="text-lg">Анастасия Потапова</span>
+          <span class="text-lg cursor-pointer">Анастасия Потапова</span>
         </div>
         <div class="flex align-items-center text-lg">
           <span class="mr-1"
@@ -78,23 +78,23 @@
         <div class="flex align-items-center">
           <span class="material-icons icon icon-small mr-1">help</span>
           <ul class="navbar-links-list color-black-alt mx-1#">
-            <li>
+            <li class="cursor-pointer">
               Мои заказы <sup><small>AWESOME</small></sup>
             </li>
-            <li>Каталог</li>
-            <li>Резервы</li>
-            <li>Новости</li>
-            <li>Маркетинговые программы</li>
+            <li class="cursor-pointer">Каталог</li>
+            <li class="cursor-pointer">Резервы</li>
+            <li class="cursor-pointer">Новости</li>
+            <li class="cursor-pointer">Маркетинговые программы</li>
           </ul>
         </div>
         <div class="flex">
           <div class="flex align-items-center mr-1">
             <span class="material-icons icon icon-small mr-05">add</span
-            ><span>Добавить в избранное</span>
+            ><span class="cursor-pointer">Добавить в избранное</span>
           </div>
           <div class="flex align-items-center mx-1">
             <span class="material-icons icon icon-small mr-05">star</span>
-            <span>Отобранные у детей позиции</span>
+            <span class="cursor-pointer">Отобранные у детей позиции</span>
           </div>
           <div class="flex align-items-center">
             <span class="material-icons icon icon-small">settings</span>
@@ -127,7 +127,7 @@
             src="images/logo.svg"
             width="40px"
             alt="Treolan Logo"
-            class="mr-1"
+            class="mr-1 cursor-pointer"
           />
         </div>
 
@@ -298,12 +298,14 @@
             <img
               src="/images/awards/RU_Best-cloud-partner.png"
               alt="Treolan Best Cloud Partner 2019"
+              class="cursor-pointer"
             />
           </div>
           <div class="width-half">
             <img
               src="/images/awards/RU_Disti_.png"
               alt="Treolan Distributor Of The Year 2019"
+              class="cursor-pointer"
             />
           </div>
         </div>
@@ -312,12 +314,14 @@
             <img
               src="/images/awards/RU_Innovation.png"
               alt="Treolan Best Innovation 2019"
+              class="cursor-pointer"
             />
           </div>
           <div class="width-half">
             <img
               src="/images/awards/CRN.png"
               alt="Treolan Best Distributor 2019"
+              class="cursor-pointer"
             />
           </div>
         </div>
@@ -325,6 +329,7 @@
           <img
             src="/images/banners/Treolan_Context.gif"
             alt="Treolan Context"
+            class="cursor-pointer"
           />
         </div>
       </div>
@@ -365,12 +370,7 @@
                   документооборот.
                 </p>
                 <p class="">
-                  <b
-                    >Узнать больше
-                    <span class="material-icons color-danger"
-                      >chevron_right</span
-                    ></b
-                  >
+                  <a href="#"> <b>Узнать больше </b></a>
                 </p>
               </div>
             </div>
@@ -402,11 +402,13 @@
                   src="/images//misc/xerox.gif"
                   alt=""
                 />
-                <p class="m-0"><b>АКЦИЯ ОТ XEROX НА РАСХОДНЫЕ МАТЕРИАЛЫ</b></p>
+                <p class="m-0 cursor-pointer">
+                  <b>АКЦИЯ ОТ XEROX НА РАСХОДНЫЕ МАТЕРИАЛЫ</b>
+                </p>
                 <p class="text-sm m-05">31.01.2020 - 01.07.2021</p>
               </div>
               <div>
-                <p class="m-05">
+                <p class="m-05 cursor-pointer">
                   <b>TRADE-IN ОТ XEROX НА МОНОХРОМНЫЕ ОФИСНЫЕ МАШИНЫ</b>
                 </p>
                 <p class="text-sm">01.04.2021 - 31.12.2021</p>
@@ -431,7 +433,7 @@
           <!-- содержимое карточки -->
           <div class="width-full height-fullshadow-outer position-relative">
             <div class="flex color-secondary space-between">
-              <div class="position-relative">
+              <div class="position-relative cursor-pointer">
                 <div class="card-arrow card-arrow-left">
                   <span class="material-icons icon">chevron_left</span>
                 </div>
@@ -440,7 +442,7 @@
                 </div>
                 <img src="/images/banners/idea.jpg" alt="I have got an idea" />
               </div>
-              <div class="position-relative">
+              <div class="position-relative cursor-pointer">
                 <div class="card-arrow card-arrow-left">
                   <span class="material-icons icon">chevron_left</span>
                 </div>
@@ -460,14 +462,42 @@
       <!-- Четвертая строка - табы новостей -->
       <div class="flex mt-2 text-lg space-between flex-wrap">
         <div class="flex ml-2">
-          <div class="mx-1 text-xlg color-primary border-bottom-1">Новости</div>
-          <div class="mx-05 text-xlg color-black-alt border-bottom-1">
+          <div
+            class="mx-1 text-xlg color-primary border-bottom-1 cursor-pointer"
+          >
+            Новости
+          </div>
+          <div
+            class="
+              mx-05
+              text-xlg
+              color-black-alt
+              border-bottom-1
+              cursor-pointer
+            "
+          >
             Новости агенств
           </div>
-          <div class="mx-05 text-xlg color-black-alt border-bottom-1">
+          <div
+            class="
+              mx-05
+              text-xlg
+              color-black-alt
+              border-bottom-1
+              cursor-pointer
+            "
+          >
             Treolan-дилер
           </div>
-          <div class="mx-05 text-xlg color-black-alt border-bottom-1">
+          <div
+            class="
+              mx-05
+              text-xlg
+              color-black-alt
+              border-bottom-1
+              cursor-pointer
+            "
+          >
             Все новости
           </div>
         </div>
@@ -613,7 +643,7 @@
       </div>
     </footer>
     <!-- Виджет чата -->
-    <div class="chat-widget-container shadow-outer">
+    <div class="chat-widget-container shadow-outer cursor-pointer">
       <div class="bg-color-primary color-secondary text-lg px-1 pr-2 py-05">
         Напишите нам
       </div>

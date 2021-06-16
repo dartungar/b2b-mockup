@@ -168,6 +168,10 @@ input[type="checkbox"] {
   border-radius: 2px 2px 0 0;
 }
 
+.chat-widget-container:hover {
+  filter: brightness(0.9);
+}
+
 .chat-widget-icon {
   position: absolute;
   right: -10px;
@@ -480,6 +484,13 @@ UTILS
 .icon-xlarge {
   font-size: 34px;
 }
+
+/* pseudo-link hack */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* coloring (see colors.css) */
 
 .color-primary {
   color: var(--color-primary);
