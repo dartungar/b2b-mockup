@@ -14,11 +14,20 @@
     <title>b2b.treolan.ru / Главная страница</title>
   </head>
 
-  <body class="bg-color-main">
+  <body class="bg-color-main position-relative">
     <header class="width-full">
-      <nav class="flex space-between bg-color-alt p-05 px-1">
+      <nav
+        class="navbar-full flex flex-wrap space-between bg-color-alt p-05 px-1"
+      >
         <div class="flex align-items-center">
-          <span class="material-icons icon icon-large color-primary mr-1"
+          <span
+            class="
+              material-icons
+              icon icon-large
+              color-primary
+              mr-1
+              animated-menu-btn
+            "
             >menu</span
           >
           <img
@@ -56,9 +65,18 @@
           <span class="material-icons icon icon-large">account_box</span>
         </div>
       </nav>
-      <nav class="flex space-between bg-color-alt-dark p-05 px-1">
+      <nav
+        class="
+          navbar-full
+          flex flex-wrap
+          space-between
+          bg-color-alt-dark
+          p-05
+          px-1
+        "
+      >
         <div class="flex align-items-center">
-          <span class="material-icons icon icon-small">help</span>
+          <span class="material-icons icon icon-small mr-1">help</span>
           <ul class="navbar-links-list color-black-alt mx-1#">
             <li>
               Мои заказы <sup><small>AWESOME</small></sup>
@@ -83,11 +101,56 @@
           </div>
         </div>
       </nav>
+      <!-- mini navbar for small screens -->
+      <nav
+        class="
+          navbar-compact
+          flex flex-wrap
+          space-evenly
+          bg-color-alt
+          p-05
+          px-1
+        "
+      >
+        <div class="flex align-items-center">
+          <span
+            class="
+              material-icons
+              icon icon-large
+              color-primary
+              mr-1
+              animated-menu-btn
+            "
+            >menu</span
+          >
+          <img
+            src="images/logo.svg"
+            width="40px"
+            alt="Treolan Logo"
+            class="mr-1"
+          />
+        </div>
+
+        <div class="flex align-items-center text-lg">
+          <span class="material-icons icon icon-large mr-05">search</span>
+          <span class="material-icons icon icon-large mr-05"
+            >notifications</span
+          >
+          <span class="material-icons icon icon-large mr-05">upload</span>
+          <span class="material-icons icon icon-large mr-05"
+            >local_shipping
+          </span>
+          <span class="material-icons icon icon-large mr-1">shopping_cart</span>
+          <span class="mx-05">Павел Пейсахович</span>
+
+          <span class="material-icons icon icon-large">account_box</span>
+        </div>
+      </nav>
     </header>
     <!-- MAIN -->
-    <main class="max-width-100ch center-content">
+    <main class="max-width-100ch center-content position-relative">
       <!-- Первая строка -->
-      <div class="flex space-between">
+      <div class="flex space-evenly flex-wrap">
         <!-- Карточка "Каталог товаров" -->
         <div class="flex col card-container">
           <div class="card-title color-primary my-05">Каталог товаров</div>
@@ -174,17 +237,27 @@
             class="
               width-full
               height-full
-              p-1
+              p-0
               shadow-outer
               border-radius
               text-lg
             "
           >
-            <div class="flex text-xlg">
-              <div class="color-primary mr-1">Счета</div>
-              <div class="color-black-alt mx-05">Резервы</div>
+            <div class="flex text-xlg border-bottom-1 border-color-main">
+              <div
+                class="
+                  color-primary
+                  ml-1
+                  p-05
+                  border-1 border-color-main border-radius
+                  tab-active
+                "
+              >
+                Счета
+              </div>
+              <div class="color-black-alt mx-05 p-05 tab-inactive">Резервы</div>
             </div>
-            <div class="flex space-between my-1 align-items-center">
+            <div class="flex space-between m-1 align-items-center">
               <div class="flex align-items-center">
                 <input
                   type="radio"
@@ -208,16 +281,19 @@
                 <input type="checkbox" name="mine" id="mine" />
               </div>
             </div>
-            <div class="my-1">
-              Сейчас у Вас нет счетов, срок действия которых истекает сегодня.
+            <div class="m-1 color-black-alt">
+              <small
+                >Сейчас у Вас нет счетов, срок действия которых истекает
+                сегодня.</small
+              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Строка с наградами -->
-      <div class="flex space-between my-2">
-        <div class="flex card-container-no-height space-between ml-2">
+      <!-- Вторая трока  - с наградами -->
+      <div class="flex space-evenly my-2 flex-wrap">
+        <div class="flex card-container-no-height space-evenly p-1">
           <div class="width-half">
             <img
               src="/images/awards/RU_Best-cloud-partner.png"
@@ -231,7 +307,7 @@
             />
           </div>
         </div>
-        <div class="flex card-container-no-height space-between">
+        <div class="flex card-container-no-height space-evenly p-1">
           <div class="width-half">
             <img
               src="/images/awards/RU_Innovation.png"
@@ -253,8 +329,8 @@
         </div>
       </div>
 
-      <!-- Третья строка -->
-      <div class="flex space-between my-2">
+      <!-- Третья строка - баннеры -->
+      <div class="flex space-evenly my-2 flex-wrap">
         <div class="flex col card-container">
           <div class="card-title color-primary my-05">Коротко о главном</div>
           <!-- содержимое карточки -->
@@ -268,16 +344,17 @@
             "
           >
             <div class="card-arrow card-arrow-left">
-              <span class="material-icons">chevron_left</span>
+              <span class="material-icons icon">chevron_left</span>
             </div>
             <div class="card-arrow card-arrow-right">
-              <span class="material-icons">chevron_right</span>
+              <span class="material-icons icon">chevron_right</span>
             </div>
             <div class="flex">
               <div class="width-half p-0">
                 <img
                   src="/images//banners/Treolan_Red_190x248.jpg"
                   alt="Hear Me Out, Stranger"
+                  class="height-full"
                 />
               </div>
               <div class="width-half p-1">
@@ -305,20 +382,16 @@
             Маркетинговые программы
           </div>
           <!-- содержимое карточки -->
-          <div
-            class="
-              width-full
-              height-full
-              shadow-outer
-              border-radius
-              position-relative
-            "
-          >
+          <div class="width-full height-full position-relative">
             <div class="card-arrow card-arrow-left layer-1">
-              <span class="material-icons color-secondary">chevron_left</span>
+              <span class="material-icons color-secondary icon"
+                >chevron_left</span
+              >
             </div>
             <div class="card-arrow card-arrow-right layer-1">
-              <span class="material-icons color-secondary">chevron_right</span>
+              <span class="material-icons color-secondary icon"
+                >chevron_right</span
+              >
             </div>
             <div
               class="flex col position-absolute layer-1 color-secondary px-3"
@@ -343,8 +416,12 @@
                 </p>
               </div>
             </div>
-            <div class="position-relative layer-background">
-              <img src="/images/banners/marketing-bg-img.png" alt="" />
+            <div class="position-relative layer-background height-full">
+              <img
+                src="/images/banners/marketing-bg-img.png"
+                class="height-full"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -356,19 +433,19 @@
             <div class="flex color-secondary space-between">
               <div class="position-relative">
                 <div class="card-arrow card-arrow-left">
-                  <span class="material-icons">chevron_left</span>
+                  <span class="material-icons icon">chevron_left</span>
                 </div>
                 <div class="card-arrow card-arrow-right">
-                  <span class="material-icons">chevron_right</span>
+                  <span class="material-icons icon">chevron_right</span>
                 </div>
                 <img src="/images/banners/idea.jpg" alt="I have got an idea" />
               </div>
               <div class="position-relative">
                 <div class="card-arrow card-arrow-left">
-                  <span class="material-icons">chevron_left</span>
+                  <span class="material-icons icon">chevron_left</span>
                 </div>
                 <div class="card-arrow card-arrow-right">
-                  <span class="material-icons">chevron_right</span>
+                  <span class="material-icons icon">chevron_right</span>
                 </div>
                 <img
                   src="/images/banners/honeywell_180x248_210405.gif"
@@ -381,8 +458,8 @@
       </div>
 
       <!-- Четвертая строка - табы новостей -->
-      <div class="flex mt-2 text-lg space-between">
-        <div class="flex">
+      <div class="flex mt-2 text-lg space-between flex-wrap">
+        <div class="flex ml-2">
           <div class="mx-1 text-xlg color-primary border-bottom-1">Новости</div>
           <div class="mx-05 text-xlg color-black-alt border-bottom-1">
             Новости агенств
@@ -394,12 +471,12 @@
             Все новости
           </div>
         </div>
-        <div>
+        <div class="see-all-news-link">
           <a href="#">Смотреть все</a>
         </div>
       </div>
       <!-- Пятая строка - новости -->
-      <div class="flex space-between">
+      <div class="flex space-evenly flex-wrap">
         <div class="flex col card-container-no-height">
           <!-- содержимое карточки -->
           <div class="width-full height-full position-relative">
@@ -465,17 +542,97 @@
         </div>
       </div>
     </main>
-    <footer class="max-width-100ch center-content mt-auto">
-      <div class="flex space-between">
-        <div class="flex">
-          <div class="flex">помощь по системе</div>
-          <div class="flex">адрес</div>
-          <div class="flex">телефон</div>
-          <div class="flex">телеграф</div>
+    <!-- footer -->
+    <footer
+      class="
+        center-content
+        mt-auto
+        bg-color-alt-dark
+        flex
+        col
+        align-items-center
+      "
+    >
+      <div class="width-95">
+        <div class="flex flex-wrap space-between">
+          <div class="flex flex-wrap">
+            <div class="flex col">
+              <p class="my-0">Помощь по системе</p>
+              <p>
+                <b>+7 (495) 967-66-78 </b><br /><a href="#"
+                  ><b>b2b-info@treolan.ru</b>
+                </a>
+              </p>
+              <button
+                class="
+                  width-full
+                  height-2
+                  color-secondary
+                  bg-color-primary
+                  px-1
+                "
+              >
+                Написать в службу поддержки
+              </button>
+            </div>
+            <div class="flex col">
+              <p class="my-0">Адрес</p>
+              <p>
+                105066, г. Москва, <br />
+                ул. Доброслободская, 5 - 1
+              </p>
+            </div>
+            <div class="flex col">
+              <p class="my-0">Телефон</p>
+              <p>
+                +7 (495) 967-66-84 <br />
+                +7 (499) 261-15-42
+              </p>
+            </div>
+            <div class="flex col">
+              <p class="my-0">Телеграф</p>
+              <p>
+                105066, г. Москва, <br />
+                ул. Доброслободская, 5 - 1, <br />
+                Артёму Грязину
+              </p>
+            </div>
+          </div>
+          <div class="mx-1">
+            <span class="material-icons icon icon-large"> facebook </span>
+            <span class="material-icons icon icon-large"> emoji_emotions </span>
+            <span class="material-icons icon icon-large"> coronavirus </span>
+            <span class="material-icons icon icon-large">
+              catching_pokemon
+            </span>
+          </div>
         </div>
-        <div class="flex">иконки соцсетей</div>
+        <div class="flex max-width-95">
+          <div class="flex col pb-0">© 2021, Treolan. Все права защищены.</div>
+        </div>
       </div>
-      <div class="flex">(c) Treolan 2021</div>
     </footer>
+    <!-- Виджет чата -->
+    <div class="chat-widget-container shadow-outer">
+      <div class="bg-color-primary color-secondary text-lg px-1 pr-2 py-05">
+        Напишите нам
+      </div>
+      <div class="chat-widget-icon">
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class=""
+        >
+          <path
+            d="M17.0156 11.0156V9H15V11.0156H17.0156ZM12.9844 11.0156V9H11.0156V11.0156H12.9844ZM9 11.0156V9H6.98438V11.0156H9ZM20.0156 2.01562C20.5469 2.01562 21 2.21875 21.375 2.625C21.7812 3 21.9844 3.45313 21.9844 3.98438V15.9844C21.9844 16.5156 21.7812 16.9844 21.375 17.3906C21 17.7969 20.5469 18 20.0156 18H6L2.01562 21.9844V3.98438C2.01562 3.45313 2.20312 3 2.57812 2.625C2.98438 2.21875 3.45312 2.01562 3.98438 2.01562H20.0156Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div></div>
+    </div>
   </body>
 </html>
